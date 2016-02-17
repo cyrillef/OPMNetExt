@@ -38,8 +38,8 @@
 #using <mscorlib.dll>
 #using <System.dll>
 
-#using <C:/Program Files/Autodesk/AutoCAD 2009/acdbmgd.dll>
-#using <C:/Program Files/Autodesk/AutoCAD 2009/acmgd.dll>
+#using <acdbmgd.dll>
+#using <acmgd.dll>
 
 #include <vcclr.h>
 
