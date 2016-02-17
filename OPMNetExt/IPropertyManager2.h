@@ -95,7 +95,7 @@ namespace Autodesk
                 InteropServices::UnmanagedType::IUnknown
               )
             ] interior_ptr<Object^> typeInfo,
-            [InteropServices::Out] ulong* dwCookie
+            [InteropServices::Out] unsigned long* dwCookie
           );
         };
       }
