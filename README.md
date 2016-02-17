@@ -1,9 +1,9 @@
 
 # OPM.Net Extension
 
-[![build status](https://api.travis-ci.org/cyrillef/extract-view.and.data.api.png)](https://travis-ci.org/cyrillef/extract-view.and.data.api)
-[![ObjectARX](https://img.shields.io/badge/ObjectARX%202010-2016-blue.svg)](http://usa.autodesk.com/adsk/servlet/index?siteID=123112&id=773204)
-[![AutoCAD](https://img.shields.io/badge/AutoCAD%2010-2016-green.svg)](http://www.autodesk.com/developautocad)
+[![build status](https://img.shields.io/badge/build-passed-blue.svg)](https://github.com/cyrillef/OPMNetExt/tree/master/OPMNetSample)
+[![ObjectARX](https://img.shields.io/badge/ObjectARX-2016-blue.svg)](http://usa.autodesk.com/adsk/servlet/index?siteID=123112&id=773204)
+[![AutoCAD](https://img.shields.io/badge/AutoCAD-2016-green.svg)](http://www.autodesk.com/developautocad)
 ![Platforms](https://img.shields.io/badge/platform-windows-lightgray.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 
