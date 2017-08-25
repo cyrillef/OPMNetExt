@@ -12,7 +12,7 @@
 		<AcadDir Condition="'$(Platform)'=='x64'">C:\Program Files\Autodesk\AutoCAD 2016\</AcadDir>
 		<AcadExe Condition="'$(ArxAppType)'=='dbx' or '$(ArxAppType)'=='dbxnet' or '$(ArxAppType)'=='arx' or '$(ArxAppType)'=='arxnet'">acad.exe</AcadExe>
 		<AcadExe Condition="'$(ArxAppType)'=='crx' or '$(ArxAppType)'=='crxnet'">accoreconsole.exe</AcadExe>
-		<ArxSdkDir>z:\Documents\__sdk\ARX-2016\</ArxSdkDir>
+		<ArxSdkDir>D:\ObjectARX 2018</ArxSdkDir>
 
 		<ArxSdkIncs Condition="'$(Platform)'=='Win32'">$(ArxSdkDir)\inc;$(ArxSdkDir)\inc-win32</ArxSdkIncs>
 		<ArxSdkIncs Condition="'$(Platform)'=='x64'">$(ArxSdkDir)\inc;$(ArxSdkDir)\inc-x64</ArxSdkIncs>
@@ -27,8 +27,8 @@
 		<ArxAmodelerLibs>$(ArxSdkDir)\utils\amodeler\lib-$(Platform)</ArxAmodelerLibs>
 		<ArxBrepLibs>$(ArxSdkDir)\utils\brep\lib-$(Platform)</ArxBrepLibs>
 		<ArxAtilLibs>$(ArxSdkDir)\utils\Atil\Lib-$(Platform)</ArxAtilLibs>
-		<ArxSDKVersion>20.0</ArxSDKVersion>
-		<ArxSDKPlatform>v110</ArxSDKPlatform>
+		<ArxSDKVersion>22.0</ArxSDKVersion>
+		<ArxSDKPlatform>v140</ArxSDKPlatform>
 	</PropertyGroup>
 
 	<ImportGroup Label="PropertySheets">

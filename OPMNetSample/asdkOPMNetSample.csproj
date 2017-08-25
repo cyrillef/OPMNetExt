@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>asdkOPMNetSample</RootNamespace>
     <AssemblyName>asdkOPMNetSample</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -27,6 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -39,27 +40,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AcCoreMgd">
-      <HintPath>..\..\..\Documents\__sdk\ARX-2016\inc\AcCoreMgd.dll</HintPath>
+      <HintPath>D:\ObjectARX 2018\inc\AcCoreMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcCui">
-      <HintPath>..\..\..\Documents\__sdk\ARX-2016\inc\AcCui.dll</HintPath>
+      <HintPath>D:\ObjectARX 2018\inc\AcCui.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcDbMgd">
-      <HintPath>..\..\..\Documents\__sdk\ARX-2016\inc\AcDbMgd.dll</HintPath>
+      <HintPath>D:\ObjectARX 2018\inc\AcDbMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcMgd">
-      <HintPath>..\..\..\Documents\__sdk\ARX-2016\inc\AcMgd.dll</HintPath>
+      <HintPath>D:\ObjectARX 2018\inc\AcMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AdWindows">
-      <HintPath>..\..\..\Documents\__sdk\ARX-2016\inc\AdWindows.dll</HintPath>
+      <HintPath>D:\ObjectARX 2018\inc\AdWindows.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AdWindows">
-      <HintPath>..\..\..\Documents\__sdk\ARX-2016\inc\AcTcMgd.dll</HintPath>
+      <HintPath>D:\ObjectARX 2018\inc\AcTcMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
