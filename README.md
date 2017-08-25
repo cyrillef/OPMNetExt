@@ -2,8 +2,8 @@
 # OPM.Net Extension
 
 [![build status](https://img.shields.io/badge/build-passed-blue.svg)](https://github.com/cyrillef/OPMNetExt/tree/master/OPMNetSample)
-[![ObjectARX](https://img.shields.io/badge/ObjectARX-2016-blue.svg)](http://usa.autodesk.com/adsk/servlet/index?siteID=123112&id=773204)
-[![AutoCAD](https://img.shields.io/badge/AutoCAD-2016-green.svg)](http://www.autodesk.com/developautocad)
+[![ObjectARX](https://img.shields.io/badge/ObjectARX-2018-blue.svg)](http://usa.autodesk.com/adsk/servlet/index?siteID=123112&id=773204)
+[![AutoCAD](https://img.shields.io/badge/AutoCAD-2018-green.svg)](http://www.autodesk.com/developautocad)
 ![Platforms](https://img.shields.io/badge/platform-windows-lightgray.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 
@@ -29,8 +29,8 @@ functionality to .NET languages.
 
 ## Dependencies
 
-* Visual Studio 2010
-* ObjectARX and AutoCAD from 2010 to 2016
+* Visual Studio 2015
+* ObjectARX and AutoCAD 2018
 
 
 ## Setup/Usage Instructions
