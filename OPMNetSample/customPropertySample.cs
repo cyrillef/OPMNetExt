@@ -31,74 +31,85 @@ namespace OPMNetSample
     public class CustomProp : IDynamicProperty2 {
         private IDynamicPropertyNotify2 m_pSink =null;
 
-        // Unique property ID
-        public void GetGUID(out Guid propGUID) {
-            propGUID =new Guid("F60AE3DA-0373-4d24-82D2-B2646517ABCB");
+       // Unique property ID
+        void IDynamicProperty2.GetGUID(out Guid propGUID)
+        {
+            propGUID = new Guid("F60AE3DA-0373-4d24-82D2-B2646517ABCB");
         }
 
         // Property display name
-        public void GetDisplayName (out string szName) {
-            szName ="My integer property";
+        void IDynamicProperty2.GetDisplayName(out string szName)
+        {
+            szName = "My integer property";
         }
 
         // Show/Hide property in the OPM, for this object instance
-        public void IsPropertyEnabled (object pUnk, out int bEnabled) {
-            bEnabled =1;
+        void IDynamicProperty2.IsPropertyEnabled(object pUnk, out int bEnabled)
+        {
+            bEnabled = 1;
         }
 
         // Is property showing but disabled
-        public void IsPropertyReadOnly (out int bReadonly) {
-            bReadonly =0;
+        void IDynamicProperty2.IsPropertyReadOnly(out int bReadonly)
+        {
+            bReadonly = 0;
         }
 
         // Get the property description string
-        public void GetDescription (out string szName) {
-            szName ="This property is an integer";
+        void IDynamicProperty2.GetDescription(out string szName)
+        {
+            szName = "This property is an integer";
         }
 
         // OPM will typically display these in an edit field
         // optional: meta data representing property type name,
         // ex. ACAD_ANGLE
-        public void GetCurrentValueName (out string szName) {
+        void IDynamicProperty2.GetCurrentValueName(out string szName)
+        {
             throw new System.NotImplementedException();
         }
 
         // What is the property type, ex. VT_R8
-        public void GetCurrentValueType (out ushort varType) {
+        void IDynamicProperty2.GetCurrentValueType(out ushort varType)
+        {
             // The Property Inspector supports the following data
             // types for dynamic properties:
             // VT_I2, VT_I4, VT_R4, VT_R8,VT_BSTR, VT_BOOL
             // and VT_USERDEFINED. 
 
-            varType =3; // VT_I4
+            varType = 3; // VT_I4
         }
 
         // Get the property value, passes the specific object
         // we need the property value for.
-        public void GetCurrentValueData (object pUnk, ref object pVarData) {
+        void IDynamicProperty2.GetCurrentValueData(object pUnk, ref object pVarData)
+        {
             // TODO: Get the value and return it to AutoCAD
 
             // Because we said the value type was a 32b int (VT_I4)
-            pVarData =(int)4;
+            pVarData = (int)4;
         }
 
         // Set the property value, passes the specific object we
         // want to set the property value for
-        public void SetCurrentValueData (object pUnk, object varData) {
+        void IDynamicProperty2.SetCurrentValueData(object pUnk, object varData)
+        {
             // TODO: Save the value returned to you
 
             // Because we said the value type was a 32b int (VT_I4)
-            int myVal =(int)varData;
+            int myVal = (int)varData;
         }
 
         // OPM passes its implementation of IDynamicPropertyNotify, you
         // cache it and call it to inform OPM your property has changed
-        public void Connect (object pSink) {
-            m_pSink =(IDynamicPropertyNotify2)pSink;
+        void IDynamicProperty2.Connect(object pSink)
+        {
+            m_pSink = (IDynamicPropertyNotify2)pSink;
         }
 
-        public void Disconnect () {
-            m_pSink =null;
+        void IDynamicProperty2.Disconnect()
+        {
+            m_pSink = null;
         }
 
     }

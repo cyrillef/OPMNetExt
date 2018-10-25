@@ -4,15 +4,15 @@
 	<!-- http://msdn.microsoft.com/en-us/library/ms171458.aspx -->
 	<PropertyGroup>
 		<_ProjectFileVersion>16.0</_ProjectFileVersion>
-		<_PropertySheetDisplayName>ObjectARX 2016</_PropertySheetDisplayName>
+		<_PropertySheetDisplayName>ObjectARX 2019</_PropertySheetDisplayName>
 	</PropertyGroup>
-	
+
 	<PropertyGroup>
 		<AcadDir Condition="'$(Platform)'=='Win32'">C:\Program Files (x86)\Autodesk\AutoCAD 2016\</AcadDir>
 		<AcadDir Condition="'$(Platform)'=='x64'">C:\Program Files\Autodesk\AutoCAD 2016\</AcadDir>
 		<AcadExe Condition="'$(ArxAppType)'=='dbx' or '$(ArxAppType)'=='dbxnet' or '$(ArxAppType)'=='arx' or '$(ArxAppType)'=='arxnet'">acad.exe</AcadExe>
 		<AcadExe Condition="'$(ArxAppType)'=='crx' or '$(ArxAppType)'=='crxnet'">accoreconsole.exe</AcadExe>
-		<ArxSdkDir>D:\ObjectARX 2018</ArxSdkDir>
+		<ArxSdkDir>C:\ObjectARX 2019\</ArxSdkDir>
 
 		<ArxSdkIncs Condition="'$(Platform)'=='Win32'">$(ArxSdkDir)\inc;$(ArxSdkDir)\inc-win32</ArxSdkIncs>
 		<ArxSdkIncs Condition="'$(Platform)'=='x64'">$(ArxSdkDir)\inc;$(ArxSdkDir)\inc-x64</ArxSdkIncs>
@@ -27,7 +27,7 @@
 		<ArxAmodelerLibs>$(ArxSdkDir)\utils\amodeler\lib-$(Platform)</ArxAmodelerLibs>
 		<ArxBrepLibs>$(ArxSdkDir)\utils\brep\lib-$(Platform)</ArxBrepLibs>
 		<ArxAtilLibs>$(ArxSdkDir)\utils\Atil\Lib-$(Platform)</ArxAtilLibs>
-		<ArxSDKVersion>22.0</ArxSDKVersion>
+		<ArxSDKVersion>23.0</ArxSDKVersion>
 		<ArxSDKPlatform>v140</ArxSDKPlatform>
 	</PropertyGroup>
 
@@ -39,7 +39,7 @@
 		<Import Condition="'$(Configuration)'=='Debug'" Project="$(ArxSdkDir)\inc\rxsdk_Debugcfg.props" />
 		<Import Condition="'$(ArxAppType)'=='dbxnet' or '$(ArxAppType)'=='crxnet' or '$(ArxAppType)'=='arxnet'" Project="arx-net-config.props" />
 	</ImportGroup>
-	
+
 	<PropertyGroup>
 		<!-- ExecutablePath>$(ExecutablePath)</ExecutablePath -->
 		<IncludePath>$(ArxSdkIncs);$(ArxHlrIncs);$(ArxAmodelerIncs);$(ArxBrepIncs);$(ArxAtilIncs);$(IncludePath)</IncludePath>
@@ -48,7 +48,7 @@
 		<!-- SourcePath>$(SourcePath)</SourcePath -->
 		<!-- ExcludePath>$(ExcludePath)</ExcludePath -->
 	</PropertyGroup>
-	
+
 	<PropertyGroup>
 		<!-- Local Windows debugger -->
 		<LocalDebuggerDebuggerType>Auto</LocalDebuggerDebuggerType>
@@ -59,7 +59,7 @@
 		<!-- LocalDebuggerAttach>False</LocalDebuggerAttach -->
 		<!-- LocalDebuggerSQLDebugging>False</LocalDebuggerSQLDebugging -->
 	</PropertyGroup>
-	
+
 	<ItemDefinitionGroup>
 		<Midl>
 			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -85,5 +85,5 @@
 			<TargetMachine Condition="'$(Platform)'=='x64'">MachineX64</TargetMachine>
 		</Link>
 	</ItemDefinitionGroup>
-	
+
 </Project>

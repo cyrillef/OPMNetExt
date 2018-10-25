@@ -50,6 +50,7 @@ build/
 *.log
 *.scc
 *.VC.db
+
 # Visual C++ cache files
 ipch/
 *.aps
