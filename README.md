@@ -47,8 +47,8 @@ msbuild /t:build /p:Configuration=Release;Platform=x64 OPMNetExt.sln
 
 Please read Kean Walmsley' blog articles on how to use the library.
 
-- [Exposing AutoCAD's Properties Palette functionality to .NET - Part 1](http://through-the-interface.typepad.com/through_the_interface/2009/03/exposing-autocads-properties-palette-functionality-to-net---part-1.html)
-- [Exposing AutoCAD's Properties Palette functionality to .NET - Part 2](http://through-the-interface.typepad.com/through_the_interface/2009/03/exposing-autocads-properties-palette-functionality-to-net---part-2.html)
+- [Exposing AutoCAD's Properties Palette functionality to .NET - Part 1](https://keanw.com/2009/03/exposing-autocads-properties-palette-functionality-to-net---part-1.html)
+- [Exposing AutoCAD's Properties Palette functionality to .NET - Part 2](https://keanw.com/2009/03/exposing-autocads-properties-palette-functionality-to-net-part-2.html)
 
 --------
 
